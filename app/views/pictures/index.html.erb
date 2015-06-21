@@ -1,30 +1,31 @@
+<a href='/pictures/new'> Add a picture</a><br>
 <h1> Instafun </h1>
- <a href='/pictures/new'> Add a picture</a><br>
+ <div class='block'>
   <% if @pictures.any? %>
         <% @pictures.all.each do |picture| %>
-        <%= picture.user.email %><br>
+        Picture posted by: <%= picture.user.email %><br>
         <%= image_tag picture.image.url, {:width => "500", :height => "500"}%><br>
-        <%= picture.description%><br>
-         <%= link_to "Like", picture_likes_path(picture), class: 'likes-link' %><br>
+        <span class='descr'><%= picture.description%><br></span>
+         <%= link_to "Like", picture_likes_path(picture), class: 'likes-link' %>
           <span class="likes_count"> <%= picture.likes.count %> </span> <%= 'like'.pluralize(picture.likes.count) %>
-        <p> Comments </p>
-          <% if picture.comments.any? %>
-            <ul>
-             <% picture.comments.each do |comment| %>
-             <li>
-              <%= comment.thoughts %>   <%= comment.user.email%>
-              </li>
+            <% if picture.comments.any? %>
+              <ul>
+               <% picture.comments.each do |comment| %>
+               <li>
+                <span class='comment'><%= comment.thoughts %></span><span class='eamil'> <%= comment.user.email%></span>
+                </li>
               <% end %>
               </ul>
-            <% else %>
+          <% else %>
           <h3> No comments yet.</h3>
-       <% end %>
-          <% if user_signed_in? %>
-           <%= link_to "Comment picture", new_picture_comment_path(picture) %><br>
-           <%= link_to "Edit description", edit_picture_path(picture) %><br>
-          <%= link_to "Delete picture", picture_path(picture), method: :delete %><br>
-          <% end %>
+      <% end %>
+        <% if user_signed_in? %>
+           <%= link_to "Comment picture", new_picture_comment_path(picture), class: 'links'%><br>
+           <%= link_to "Edit description", edit_picture_path(picture), class: 'links' %><br>
+          <%= link_to "Delete picture", picture_path(picture), method: :delete, class: 'links' %><br><br>
+        <% end %>
      <% end%>
-  <% else %>
+   <% else %>
   <h1>No pictures added yet</h1>
-<% end %>
+ <% end %>
+</div>
