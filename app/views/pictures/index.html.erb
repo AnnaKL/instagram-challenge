@@ -12,7 +12,7 @@
               <ul>
                <% picture.comments.each do |comment| %>
                <li>
-                <span class='comment'><%= comment.thoughts %></span><span class='eamil'> <%= comment.user.email%></span>
+                <span class='comment'><%= comment.thoughts%></span><span class='email'><%= comment.user.email%></span>
                 </li>
               <% end %>
               </ul>

@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/repos/55b38e3a6956800b44014e12/badges/1062334b9830d0d0056a/gpa.svg)](https://codeclimate.com/repos/55b38e3a6956800b44014e12/feed)
+
 Instagram Challenge
 ===================
 
