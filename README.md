@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/repos/55b38e3a6956800b44014e12/badges/1062334b9830d0d0056a/gpa.svg)](https://codeclimate.com/repos/55b38e3a6956800b44014e12/feed)
+[![Code Climate](https://codeclimate.com/repos/55b38e3a6956800b44014e12/badges/1062334b9830d0d0056a/gpa.svg)](https://codeclimate.com/repos/55b38e3a6956800b44014e12/feed)   [![Build Status](https://travis-ci.org/AnnaKL/instagram-challenge.svg?branch=master)](https://travis-ci.org/AnnaKL/instagram-challenge)
 
 Instagram Challenge
 ===================
