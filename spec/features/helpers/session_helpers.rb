@@ -1,7 +1,7 @@
 module SessionHelpers
 
   def sign_up(email, password, password_confirmation)
-    visit '/pictures'
+    visit '/'
       click_link 'Sign up'
       fill_in 'Email', with: email
       fill_in 'Password', with: password
@@ -11,7 +11,7 @@ module SessionHelpers
   end
 
   def sign_in(email, password)
-    visit '/pictures'
+    visit '/'
     click_link 'Sign in'
     fill_in 'Email', with: email
     fill_in 'Password', with: password
@@ -19,7 +19,7 @@ module SessionHelpers
   end
 
   def attach_picture
-      visit '/pictures'
+      visit '/'
       click_link 'Add a picture'
       attach_file 'Image', 'spec/features/Iceland.jpg'
       fill_in('Description', with: 'My lovely Iceland')
