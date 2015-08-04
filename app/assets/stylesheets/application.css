@@ -1,14 +1,6 @@
 
-body {
-    background-image: url('http://newartcolorz.com/images/2014/9/free-sky-wallpaper-27461-28178-hd-wallpapers.jpg');
-    background-size: 100%;
-    background-attachment: fixed;
-    text-decoration:none;
-    }
-
-
-
 .user {
+
   display: block;
   margin-left: 25em;
   margin-right: auto;
@@ -20,17 +12,21 @@ body {
   font-size: 4em;
 }
 
+h2 {
+  font-family: 'Lobster', cursive;
+}
+
 .likes-link {
    text-decoration:none;
 }
+
 .links {
   text-decoration:none;
   font-family: 'Papyrus', cursive;
-  color: #0000FF
-;
-
-
+  color: grey;
+  font-size: 1.5em;
 }
+
 .comment, h3 {
   font-family: 'Papyrus', cursive;
   font-size: 20px;
@@ -41,7 +37,7 @@ body {
 }
 
 .descr {
-  font-family: 'Lobster', cursive;
+  font-family: 'Papyrus', cursive;
 }
 
 

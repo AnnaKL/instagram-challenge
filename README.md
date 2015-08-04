@@ -3,22 +3,43 @@
 Instagram Challenge
 ===================
 
-Instructions
--------
-* Challenge time: Friday, the entire day + the weekend if you need it
-* Feel free to use Google, your notes, books, etc., but work on your own
-* You must submit a pull request to this repo with your challenge solution (or partial solution) by 9am Monday morning
+![Picture 1](app/images/screenshot1.png) 
 
-Task
+Challenge
+-------
+An Instafun (inspired by Instagram) that allows user to post, comment and like pictures.
+
+
+Implemented functionalities
 -----
 
-Build Instagram: Simple huh!
+* User can sign up, sign in, sign in with Facebook and sign out
+* User can add a picture
+* User can comment on picture
+* User can like a picture
+* User can only edit or delete pictures he/she created.
 
-As usual please start by
 
-* Filling out your learning plan self review for the week: https://github.com/makersacademy/learning_plan (if you haven't already)
-* Forking this repo
+Technologies
+-----
 
-Your challenge is to build Instagram using Rails. You'll need **users** who can post **pictures**, write **comments** on pictures and **like** a picture. Style it like Instagram's website (or more awesome). 
+* Ruby on Rails
+* Active Records
+* Devise gem
+* Omniauth-facebook gem
+* Paperclip gem
+* RSpec and Capybara (used for testing)
+* HTML
+* CSS
 
-Bonus if you can add filters! 
+How to run
+-----
+
+```
+git clone git@github.com:AnnaKL/chitter-challenge.git
+cd chitter-challenge
+bundle install
+rails s
+type http://localhost:3000/ in the browser
+```
+* To run the test type rspec in the application directory
