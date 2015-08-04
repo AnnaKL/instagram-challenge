@@ -3,7 +3,7 @@
 Instagram Challenge
 ===================
 
-![Picture 1](app/images/screenshot1.png) 
+![Picture 1](app/assets/images/screenshot1.png) 
 
 Challenge
 -------
@@ -43,3 +43,7 @@ rails s
 type http://localhost:3000/ in the browser
 ```
 * To run the test type rspec in the application directory
+
+To do
+-----
+* Improve styling.
